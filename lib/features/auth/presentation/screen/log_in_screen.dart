@@ -1,0 +1,61 @@
+import 'package:career/core/constant/class/app_asset.dart';
+import 'package:career/core/constant/class/app_color.dart';
+import 'package:career/core/constant/class/app_size.dart';
+import 'package:career/core/constant/class/app_string.dart';
+import 'package:career/core/widget/custom_button_primary.dart';
+import 'package:career/core/widget/under_line_text.dart';
+import 'package:career/features/auth/presentation/widget/custom_auth_button.dart';
+import 'package:career/features/auth/presentation/widget/custom_text_field.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import '../widget/custom_title_auth.dart';
+import '../widget/dotted_line_text.dart';
+
+class LogInScreen extends StatelessWidget {
+  const LogInScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      appBar: AppBar(),
+      body: Stack(
+        children: [
+          ListView(
+            children: [
+              CustomTitleAuth(text1: AppString.findYourDreamJob, text2: AppString.loginHere,),
+              CustomTextField(prefix: SvgPicture.asset(AppAsset.email,height: 7,width: 7,),hintText: AppString.emailAddress.tr),
+              16.verticalSpace(),
+              CustomTextField(prefix: SvgPicture.asset(AppAsset.password,height: 13,),hintText: AppString.password.tr),
+              17.verticalSpace(),
+              Padding(
+                padding:  EdgeInsets.symmetric(horizontal:  0.12.w(context) ),
+                child: UnderLineText(text: AppString.forgetPassword.tr),
+              ),
+              CustomButtonPrimary(text: AppString.login.tr),
+            ],
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: 0.06.h(context),horizontal: 0.05.w(context)),
+              decoration: BoxDecoration(
+                color: AppColor.primaryColor,
+              ),
+              child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    DottedLineText(),
+                    CustomAuthButton(text: AppString.createAFreeAccountNow.tr, icons: AppAsset.createNewAccount),
+                    CustomAuthButton(text: AppString.createAFreeAccountNow.tr, icons: AppAsset.createNewAccount),
+                    UnderLineText(text: 'Do It Later')
+                  ]
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
