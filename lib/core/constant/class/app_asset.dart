@@ -18,6 +18,19 @@ class AppAsset{
  static const email = '$baseUrlIcons/email.svg';
  static const password = '$baseUrlIcons/password.svg';
  static const createNewAccount = '$baseUrlIcons/createNewAccount.svg';
+ static const alarm = '$baseUrlIcons/alarm.svg';
+ static const previous = '$baseUrlIcons/previous.svg';
+ static const about = '$baseUrlIcons/about.svg';
+ static const age = '$baseUrlIcons/age.svg';
+ static const dateOfBirth = '$baseUrlIcons/dateOfBirth.svg';
+ static const fullName = '$baseUrlIcons/fullName.svg';
+ static const gender = '$baseUrlIcons/gender.svg';
+ static const maritalStatus = '$baseUrlIcons/maritalStatus.svg';
+ static const nationality = '$baseUrlIcons/nationality.svg';
+
+
+
+
 
 
 

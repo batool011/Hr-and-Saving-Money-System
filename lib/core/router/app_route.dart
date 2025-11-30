@@ -2,6 +2,8 @@ import 'package:career/core/router/routes_name.dart';
 import 'package:career/features/auth/presentation/getx/binding.dart';
 import 'package:career/features/auth/presentation/screen/create_new_account_screen.dart';
 import 'package:career/features/auth/presentation/screen/log_in_screen.dart';
+import 'package:career/features/auth/presentation/screen/register_screen.dart';
+import 'package:career/features/auth/presentation/screen/verification_screen.dart';
 import 'package:career/features/on%20boarding/presentation/getx/binding/onboarding_binding.dart';
 import 'package:career/features/on%20boarding/presentation/screen/on_boarding_screen.dart';
 import 'package:career/features/splash/presentation/screen/splash_screen.dart';
@@ -28,6 +30,16 @@ class AppRoute {
     GetPage(
       name: RoutesName.createNewAccount,
       page: () => const CreateNewAccountScreen(),
+      binding: AuthBinding(),
+    ),
+    GetPage(
+      name: RoutesName.verify,
+      page: () => const VerificationScreen(),
+      binding: AuthBinding(),
+    ),
+    GetPage(
+      name: RoutesName.register,
+      page: () => const RegisterScreen(),
       binding: AuthBinding(),
     ),
   ];

@@ -12,38 +12,33 @@ class OnBoardingScreen extends GetView<OnBoardingController> {
     return Scaffold(
       body: Stack(
         children: [
-          CustomBottomContainer(),
-
-          IgnorePointer(
-            ignoring: true,
-            child: PageView.builder(
-              itemCount: controller.pages.length,
-              onPageChanged: controller.onPageChanged,
-              itemBuilder: (context, index) {
-                final page = controller.pages[index];
-
-                return Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Column(
-                      children: [
-                        Text(
-                            page["title1"]!,
-                            style:Theme.of(context).textTheme.headlineMedium!.copyWith(fontWeight: FontWeight.w900)
-                        ),
-                        Text(
-                            page["title2"]!,
-                            style:Theme.of(context).textTheme.headlineLarge!.copyWith(fontWeight: FontWeight.w900)
-                        ),
-                      ],
-                    ),
-                    Image.asset(page["image"]!),
-                    200.verticalSpace()
-                  ],
-                );
-              },
-            ),
+          PageView.builder(
+            itemCount: controller.pages.length,
+            onPageChanged: controller.onPageChanged,
+            itemBuilder: (context, index) {
+              final page = controller.pages[index];
+              return Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Column(
+                    children: [
+                      Text(
+                          page["title1"]!,
+                          style:Theme.of(context).textTheme.headlineMedium!.copyWith(fontWeight: FontWeight.w900)
+                      ),
+                      Text(
+                          page["title2"]!,
+                          style:Theme.of(context).textTheme.headlineLarge!.copyWith(fontWeight: FontWeight.w900)
+                      ),
+                    ],
+                  ),
+                  Image.asset(page["image"]!),
+                  200.verticalSpace()
+                ],
+              );
+            },
           ),
+          CustomBottomContainer(),
         ],
       )
     );

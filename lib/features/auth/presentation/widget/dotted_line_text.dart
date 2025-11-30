@@ -1,10 +1,8 @@
 import 'package:career/core/constant/class/app_size.dart';
 import 'package:career/core/constant/class/app_string.dart';
 import 'package:dotted_line/dotted_line.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../../../core/constant/class/app_color.dart';
 
 class DottedLineText extends StatelessWidget {
@@ -17,9 +15,9 @@ class DottedLineText extends StatelessWidget {
       children: [
         const Expanded(
           child: DottedLine(
-            dashLength: 4,
+            dashLength: 3,
             dashGapLength: 3,
-            lineThickness: 2,
+            lineThickness: 1,
             dashColor: AppColor.lightCyan,
           ),
         ),
@@ -32,9 +30,9 @@ class DottedLineText extends StatelessWidget {
         ),
         const Expanded(
           child: DottedLine(
-            dashLength: 4,
+            dashLength: 3,
             dashGapLength: 3,
-            lineThickness: 2,
+            lineThickness: 1,
             dashColor: AppColor.lightCyan,
 
           ),

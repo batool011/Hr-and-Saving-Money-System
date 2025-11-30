@@ -50,7 +50,7 @@ class CustomTextField extends StatelessWidget {
           ),
           contentPadding:  EdgeInsets.symmetric(
             horizontal:  0.05.w(context),
-            vertical:  0.05.w(context),
+            vertical:  0.02.h(context),
           ),
           filled: true,
           fillColor: AppColor.lightGrey,

@@ -14,7 +14,7 @@ TextStyle _getTextStyle(double fontSize, FontWeight fontWeight, Color color) {
     fontSize: fontSize,
     fontWeight: fontWeight,
     color: color,
-    //fontFamily: 'Outfit',
+    fontFamily: 'Outfit',
     height: 1.2,
   );
 }

@@ -4,6 +4,7 @@ class RoutesName {
   //auth
   static const login = '/login';
   static const createNewAccount = '/createNewAccount';
+  static const verify = '/verify';
   static const register = '/register';
 
 

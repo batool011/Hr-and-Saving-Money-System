@@ -13,11 +13,12 @@ class CustomAuthButton extends StatelessWidget {
    final String icons;
   @override
   Widget build(BuildContext context) {
-    return  GestureDetector(
-      onTap: (){Get.toNamed(RoutesName.createNewAccount);},
+    return  InkWell(
+      onTap: (){
+        Get.toNamed(RoutesName.createNewAccount);},
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 0.05.w(context), horizontal: 0.05.w(context)),
-        margin: EdgeInsets.symmetric(vertical: 0.04.w(context)),
+        margin: EdgeInsets.symmetric(vertical: 0.01.h(context)),
         decoration:
         BoxDecoration(color: AppColor.secondryColor,
           borderRadius: BorderRadius.circular(50),),
