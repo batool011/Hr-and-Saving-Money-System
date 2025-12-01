@@ -18,7 +18,7 @@ class AppString {
   static const String Continue ="Continue";
   static const String resendCode = "Resend Code";
   static const String youCanResendTheCodeWithin45Seconds ="You can resend the code within 45 Seconds";
-  static const String enterTheCodeSentTo ="Enter  The Code Sent To:";
+  static const String enterTheCodeSentTo ="Enter The Code Sent To:";
   static const String someoneEmail ="Someone.one@gmail.com";
   static const String previous= "Previous";
   static const String skip= "Skip";
@@ -49,6 +49,20 @@ class AppString {
   static const String facebookLink ="Facebook Link";
   static const String linkedinLink ="Linkedin Link";
   static const String addALink= "Add A Link";
+  static const String education= "Education";
+  static const String level= "Level";
+  static const String degree= "Degree";
+  static const String universityName= "University Name";
+  static const String dateFrom= "Date From";
+  static const String dateTo= "Date To";
+  static const String addAnEducation="Add An Education";
+  static const String skills= "Skills";
+  static const String workExperiences ="Work Experiences";
+
+
+
+
+
 
 
 

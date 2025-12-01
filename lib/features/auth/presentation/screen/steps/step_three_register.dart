@@ -4,11 +4,11 @@ import 'package:career/features/auth/presentation/widget/custom_delete_icon.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import '../../../../core/constant/class/app_asset.dart';
-import '../../../../core/constant/class/app_string.dart';
-import '../getx/controller/register_controller.dart';
-import '../widget/custom_text_field.dart';
-import '../widget/sub_title_steps.dart';
+import '../../../../../core/constant/class/app_asset.dart';
+import '../../../../../core/constant/class/app_string.dart';
+import '../../getx/controller/register_controller.dart';
+import '../../widget/custom_text_field.dart';
+import '../../widget/sub_title_steps.dart';
 
 class StepThreeRegister extends GetView<RegisterController> {
   const StepThreeRegister({super.key});

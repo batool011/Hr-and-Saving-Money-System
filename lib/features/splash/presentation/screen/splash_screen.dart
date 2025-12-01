@@ -16,7 +16,7 @@ class SplashScreen extends GetView<SplashController> {
         children: [
           Image.asset(AppAsset.splash,fit: BoxFit.cover,width: double.infinity,height: double.infinity,),
           Container(
-            color: AppColor.primaryColor.withOpacity(0.8),
+            color: AppColor.primaryColor.withAlpha(220),
           ),
           Center(
             child: Column(

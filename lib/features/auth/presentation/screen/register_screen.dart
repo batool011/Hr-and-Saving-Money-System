@@ -3,9 +3,11 @@ import 'package:career/core/constant/class/app_color.dart';
 import 'package:career/core/constant/class/app_size.dart';
 import 'package:career/core/widget/custom_button_secondry.dart';
 import 'package:career/core/widget/under_line_text.dart';
-import 'package:career/features/auth/presentation/screen/step_one_register.dart';
-import 'package:career/features/auth/presentation/screen/step_three_register.dart';
-import 'package:career/features/auth/presentation/screen/step_two_register.dart';
+import 'package:career/features/auth/presentation/screen/steps/step_five_register.dart';
+import 'package:career/features/auth/presentation/screen/steps/step_four_register.dart';
+import 'package:career/features/auth/presentation/screen/steps/step_one_register.dart';
+import 'package:career/features/auth/presentation/screen/steps/step_three_register.dart';
+import 'package:career/features/auth/presentation/screen/steps/step_two_register.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -91,9 +93,9 @@ class RegisterScreen extends GetView<RegisterController> {
      case 2:
        return StepThreeRegister();
      case 3:
-       return Container(color: Colors.yellowAccent,);
+       return StepFourRegister();
      case 4:
-       return Container(color: Colors.greenAccent,);
+       return StepFiveRegister();
      case 5:
        return Container(color: Colors.pinkAccent,);
      default:

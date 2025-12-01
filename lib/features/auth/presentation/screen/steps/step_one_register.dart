@@ -6,10 +6,10 @@ import 'package:career/features/auth/presentation/widget/custom_text_field.dart'
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import '../../../../core/constant/class/app_asset.dart';
-import '../getx/controller/register_controller.dart';
-import '../widget/custom_drop_down_button.dart';
-import '../widget/sub_title_steps.dart';
+import '../../../../../core/constant/class/app_asset.dart';
+import '../../getx/controller/register_controller.dart';
+import '../../widget/custom_drop_down_button.dart';
+import '../../widget/sub_title_steps.dart';
 
 class StepOneRegister extends GetView<RegisterController> {
   const StepOneRegister({super.key});

@@ -39,6 +39,13 @@ class AppAsset{
  static const number = '$baseUrlIcons/number.svg';
  static const website = '$baseUrlIcons/website.svg';
  static const whatsapp = '$baseUrlIcons/whatsapp.svg';
+ static const company = '$baseUrlIcons/company.svg';
+ static const date = '$baseUrlIcons/date.svg';
+ static const degree = '$baseUrlIcons/degree.svg';
+ static const level = '$baseUrlIcons/level.svg';
+ static const position = '$baseUrlIcons/position.svg';
+ static const university = '$baseUrlIcons/university.svg';
+
 
 
 

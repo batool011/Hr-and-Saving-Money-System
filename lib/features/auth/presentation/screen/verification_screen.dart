@@ -28,6 +28,7 @@ class VerificationScreen extends StatelessWidget {
               Row(
                 children: [
                   CustomTextAuth(text: AppString.enterTheCodeSentTo.tr),
+                  12.horizontalSpace(),
                   UnderLineText(text: AppString.someoneEmail.tr)
                 ],
               ),

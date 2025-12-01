@@ -8,7 +8,8 @@ final String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 0.03.h(context),horizontal: 0.08.w(context) ),
+     // padding: EdgeInsets.symmetric(vertical: 0.03.h(context),horizontal: 0.08.w(context) ),
+      padding: EdgeInsetsDirectional.only(start: 0.08.w(context),top: 0.03.h(context),bottom: 0.03.h(context) ),
       child: Text(text,style: Theme.of(context).textTheme.bodySmall!.copyWith(color: AppColor.lightPrimaryColor.withAlpha(40)),),
     );
   }
