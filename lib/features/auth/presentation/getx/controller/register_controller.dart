@@ -1,17 +1,43 @@
 import 'dart:convert';
 import 'package:career/core/constant/class/app_string.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../../data/model/country_model.dart';
 
 class RegisterController extends GetxController {
   var currentStep = 0.obs;
-  final int totalSteps = 5;
+  final int totalSteps = 6;
+  //
+  final genderItems = <String>[
+    AppString.female.tr,
+    AppString.male.tr
+  ].obs;
   final selectedGender = RxnString();
+  //
   RxList<CountryModel> countries = <CountryModel>[].obs;
   var allCountries = <CountryModel>[].obs;
   var filteredCountries = <CountryModel>[].obs;
   RxString selectedCountryName = ''.obs;
+ //
+  RxList<TextEditingController> linkControllers = <TextEditingController>[].obs;
+  RxList<TextEditingController> numberControllers = <TextEditingController>[].obs;
+  void addNumberField() {
+    numberControllers.add(TextEditingController());
+  }
+
+  void removeNumberField(int index) {
+    numberControllers[index].dispose();
+    numberControllers.removeAt(index);
+  }
+  void addLinkField() {
+    linkControllers.add(TextEditingController());
+  }
+
+  void removeLinkField(int index) {
+    linkControllers[index].dispose();
+    linkControllers.removeAt(index);
+  }
 
   void selectCountry(CountryModel country) {
     selectedCountryName.value =  country.en;
@@ -30,15 +56,7 @@ class RegisterController extends GetxController {
   }
 
 
-  final genderItems = <String>[
-  AppString.female.tr,
-    AppString.male.tr
-  ].obs;
-
-
-
-
-  void setSelected(String? value) {
+  void setSelectedGender(String? value) {
   selectedGender.value = value;
   }
 

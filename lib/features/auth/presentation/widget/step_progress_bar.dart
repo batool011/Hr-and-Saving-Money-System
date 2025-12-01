@@ -9,39 +9,52 @@ class StepProgressBar extends StatelessWidget {
   final int steps;
   final int currentStep;
 
-  const StepProgressBar({super.key, required this.steps, required this.currentStep});
+  const StepProgressBar({
+    super.key,
+    required this.steps,
+    required this.currentStep,
+  });
 
   @override
   Widget build(BuildContext context) {
-    double percent = ((currentStep + 1) / steps) * 100;
+
+    final int bars = steps - 1; // عدد الخطوط
+
+    double percent = (currentStep / bars) * 100;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
-          children: List.generate(steps, (index) {
+          children: List.generate(bars, (index) {
             return Expanded(
               child: Container(
                 height: 5,
-                margin: EdgeInsets.only(right: index == steps - 1 ? 0 : 6),
+                margin: EdgeInsets.only(right: index == bars - 1 ? 0 : 6),
                 decoration: BoxDecoration(
-                  color: index <= currentStep ? AppColor.lightCyan : AppColor.grey,
+                  color: index < currentStep ? AppColor.lightCyan : AppColor.grey,
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
             );
           }),
         ),
+
         10.verticalSpace(),
+
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-          Text(
+            Text(
               "${percent.toInt()}%",
-              style:Theme.of(context).textTheme.bodySmall!.copyWith(color: AppColor.primaryColor)
-          ),
-          UnderLineText(text: AppString.skip.tr)
-        ],)
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall!
+                  .copyWith(color: AppColor.primaryColor),
+            ),
+            UnderLineText(text: AppString.skip.tr),
+          ],
+        )
       ],
     );
   }

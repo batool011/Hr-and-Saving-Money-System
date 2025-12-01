@@ -27,6 +27,21 @@ class AppAsset{
  static const gender = '$baseUrlIcons/gender.svg';
  static const maritalStatus = '$baseUrlIcons/maritalStatus.svg';
  static const nationality = '$baseUrlIcons/nationality.svg';
+ static const accessAcount = '$baseUrlIcons/accessAcount.svg';
+ static const actualWork = '$baseUrlIcons/actualWork.svg';
+ static const jobTitle = '$baseUrlIcons/jobTitle.svg';
+ static const salary = '$baseUrlIcons/salary.svg';
+ static const sitePrefered = '$baseUrlIcons/sitePrefered.svg';
+ static const workTypePrefered = '$baseUrlIcons/workTypePrefered.svg';
+ static const contactEmail = '$baseUrlIcons/contactEmail.svg';
+ static const facebook = '$baseUrlIcons/facebook.svg';
+ static const location = '$baseUrlIcons/location.svg';
+ static const number = '$baseUrlIcons/number.svg';
+ static const website = '$baseUrlIcons/website.svg';
+ static const whatsapp = '$baseUrlIcons/whatsapp.svg';
+
+
+
 
 
 

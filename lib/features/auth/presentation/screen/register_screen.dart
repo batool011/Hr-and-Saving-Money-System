@@ -4,6 +4,8 @@ import 'package:career/core/constant/class/app_size.dart';
 import 'package:career/core/widget/custom_button_secondry.dart';
 import 'package:career/core/widget/under_line_text.dart';
 import 'package:career/features/auth/presentation/screen/step_one_register.dart';
+import 'package:career/features/auth/presentation/screen/step_three_register.dart';
+import 'package:career/features/auth/presentation/screen/step_two_register.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -85,13 +87,15 @@ class RegisterScreen extends GetView<RegisterController> {
      case 0:
        return StepOneRegister();
      case 1:
-       return Container(color: Colors.yellowAccent,);
+       return StepTwoRegister();
      case 2:
-       return Container(color: Colors.greenAccent,);
+       return StepThreeRegister();
      case 3:
-       return Container(color: Colors.blue,);
+       return Container(color: Colors.yellowAccent,);
      case 4:
-       return Container(color: Colors.purpleAccent,);
+       return Container(color: Colors.greenAccent,);
+     case 5:
+       return Container(color: Colors.pinkAccent,);
      default:
        return const Center(child: Text("Unknown Step"));
    }

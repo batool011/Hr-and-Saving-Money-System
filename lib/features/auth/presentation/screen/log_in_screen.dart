@@ -32,7 +32,7 @@ class LogInScreen extends GetView<LoginController> {
               CustomTextField(prefix: SvgPicture.asset(AppAsset.email,fit: BoxFit.scaleDown,),hintText: AppString.emailAddress.tr,controller: controller.email,),
               16.verticalSpace(),
               CustomTextField(prefix: SvgPicture.asset(AppAsset.password,fit: BoxFit.scaleDown,),hintText: AppString.password.tr,controller: controller.password,),
-              17.verticalSpace(),
+              7.verticalSpace(),
               Padding(
                 padding:  EdgeInsets.symmetric(horizontal:  0.12.w(context) ),
                 child: UnderLineText(text: AppString.forgetPassword.tr),
