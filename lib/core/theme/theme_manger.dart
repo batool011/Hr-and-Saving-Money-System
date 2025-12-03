@@ -21,7 +21,7 @@ getApplicationTheme(BuildContext context) => ThemeData(
     labelMedium: getMediumStyle(color: AppColor.secondryColor, fontSize: 16),
     labelSmall: getRegularStyle(color: AppColor.secondryColor, fontSize: 14),
   ),
-  scaffoldBackgroundColor: AppColor.secondryColor,
+   scaffoldBackgroundColor: AppColor.secondryColor,
   inputDecorationTheme: InputDecorationTheme(
     filled: true,
     contentPadding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),

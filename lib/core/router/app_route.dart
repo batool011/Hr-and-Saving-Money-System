@@ -1,5 +1,5 @@
 import 'package:career/core/router/routes_name.dart';
-import 'package:career/features/auth/presentation/getx/binding.dart';
+import 'package:career/features/auth/presentation/getx/auth_binding.dart';
 import 'package:career/features/auth/presentation/screen/create_new_account_screen.dart';
 import 'package:career/features/auth/presentation/screen/log_in_screen.dart';
 import 'package:career/features/auth/presentation/screen/register_screen.dart';
@@ -8,6 +8,8 @@ import 'package:career/features/on%20boarding/presentation/getx/binding/onboardi
 import 'package:career/features/on%20boarding/presentation/screen/on_boarding_screen.dart';
 import 'package:career/features/splash/presentation/screen/splash_screen.dart';
 import 'package:get/get.dart';
+import '../../features/app main/prsentation/getx/home_binding.dart';
+import '../../features/app main/prsentation/main_screen.dart';
 import '../../features/splash/presentation/getx/binding/splash_binding.dart';
 
 class AppRoute {
@@ -41,6 +43,11 @@ class AppRoute {
       name: RoutesName.register,
       page: () => const RegisterScreen(),
       binding: AuthBinding(),
+    ),
+    GetPage(
+      name: RoutesName.home,
+      page: () =>  MainScreen(),
+      binding: MainBinding(),
     ),
   ];
 }

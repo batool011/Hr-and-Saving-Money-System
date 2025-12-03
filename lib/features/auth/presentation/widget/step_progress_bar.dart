@@ -1,6 +1,7 @@
 import 'package:career/core/constant/class/app_color.dart';
 import 'package:career/core/constant/class/app_size.dart';
 import 'package:career/core/constant/class/app_string.dart';
+import 'package:career/core/router/routes_name.dart';
 import 'package:career/core/widget/under_line_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +19,7 @@ class StepProgressBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final int bars = steps - 1; // عدد الخطوط
+    final int bars = steps - 1;
 
     double percent = (currentStep / bars) * 100;
 
@@ -52,7 +53,11 @@ class StepProgressBar extends StatelessWidget {
                   .bodySmall!
                   .copyWith(color: AppColor.primaryColor),
             ),
-            UnderLineText(text: AppString.skip.tr),
+            GestureDetector(
+              onTap: (){
+                Get.toNamed(RoutesName.home);
+              },
+                child: UnderLineText(text: AppString.skip.tr)),
           ],
         )
       ],

@@ -56,11 +56,15 @@ class AppString {
   static const String dateFrom= "Date From";
   static const String dateTo= "Date To";
   static const String addAnEducation="Add An Education";
-  static const String skills= "Skills";
-  static const String workExperiences ="Work Experiences";
-
-
-
+  static const String skills = "Skills";
+  static const String workExperiences = "Work Experiences";
+  static const String accessYourAccount = "Access Your Account";
+  static const String companyName = "Company Name";
+  static const String position = "position";
+  static const String linksOrObject = "Links Or Projects";
+  static const String search = "Search";
+  static const String lastResearchFilter = " Last research filter";
+  static const String seeAll = " See All";
 
 
 

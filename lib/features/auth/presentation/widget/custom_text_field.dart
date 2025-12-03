@@ -26,7 +26,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric( horizontal: 0.05.w(context)),
+       padding: EdgeInsets.symmetric( horizontal: 0.05.w(context)),
       child: TextFormField(
         keyboardType: textInputType,
         style: const TextStyle(fontSize: 14, color: AppColor.black),

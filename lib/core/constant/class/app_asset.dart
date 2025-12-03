@@ -4,17 +4,17 @@ class AppAsset{
  static const baseUrlIcons = 'assets/icons';
 
 
- // image
- //splash
  static const logo = '$baseUrlImage/logo.png';
  static const splash = '$baseUrlImage/splash.png';
- //onboarding
  static const onboardingFirst ='$baseUrlImage/onboardingFirst.png';
  static const onboardingSecond ='$baseUrlImage/onboardingSecond.png';
  static const onboardingThird ='$baseUrlImage/onboardingThird.png';
  static const onboardingFourth ='$baseUrlImage/onboardingFourth.png';
+ static const slider = '$baseUrlImage/slider.png';
+ static const neuw = '$baseUrlImage/new.png';
+
+
  //icons
- //login
  static const email = '$baseUrlIcons/email.svg';
  static const password = '$baseUrlIcons/password.svg';
  static const createNewAccount = '$baseUrlIcons/createNewAccount.svg';
@@ -45,6 +45,17 @@ class AppAsset{
  static const level = '$baseUrlIcons/level.svg';
  static const position = '$baseUrlIcons/position.svg';
  static const university = '$baseUrlIcons/university.svg';
+ static const adv = '$baseUrlIcons/adv.svg';
+ static const advBold = '$baseUrlIcons/advBold.svg';
+ static const profile = '$baseUrlIcons/profile.svg';
+ static const profileBold = '$baseUrlIcons/profileBold.svg';
+ static const searchWork = '$baseUrlIcons/searchWork.svg';
+ static const searchWorkBold = '$baseUrlIcons/searchWorkBold.svg';
+ static const locationHome = '$baseUrlIcons/locationHome.svg';
+ static const search = '$baseUrlIcons/search.svg';
+
+
+
 
 
 

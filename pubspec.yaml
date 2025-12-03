@@ -39,6 +39,8 @@ dependencies:
   dotted_line: ^3.2.3
   flutter_otp_text_field: ^1.5.1+1
   dropdown_button2: ^2.3.9
+  persistent_bottom_nav_bar: ^6.2.1
+  carousel_slider: ^5.1.1
 
 
 dev_dependencies:

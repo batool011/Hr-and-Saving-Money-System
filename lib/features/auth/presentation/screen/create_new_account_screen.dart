@@ -47,7 +47,7 @@ class CreateNewAccountScreen extends StatelessWidget {
                   children: [
                     DottedLineText(),
                     30.verticalSpace(),
-                    CustomAuthButton(text: AppString.createAFreeAccountNow.tr, icons: AppAsset.createNewAccount),
+                    CustomAuthButton(text: AppString.accessYourAccount.tr, icons: AppAsset.accessAcount),
                     CustomAuthButton(text: AppString.continueWithGoogle.tr, icons: AppAsset.createNewAccount),
                     30.verticalSpace(),
                     UnderLineText(text: AppString.doItLater.tr)

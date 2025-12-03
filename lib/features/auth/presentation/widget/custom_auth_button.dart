@@ -1,6 +1,4 @@
-import 'package:career/core/constant/class/app_asset.dart';
 import 'package:career/core/constant/class/app_size.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -17,7 +15,7 @@ class CustomAuthButton extends StatelessWidget {
       onTap: (){
         Get.toNamed(RoutesName.createNewAccount);},
       child: Container(
-        padding: EdgeInsets.symmetric(vertical: 0.05.w(context), horizontal: 0.05.w(context)),
+        padding: EdgeInsets.symmetric(vertical: 0.05.w(context), horizontal: 0.15.w(context)),
         margin: EdgeInsets.symmetric(vertical: 0.01.h(context)),
         decoration:
         BoxDecoration(color: AppColor.secondryColor,
