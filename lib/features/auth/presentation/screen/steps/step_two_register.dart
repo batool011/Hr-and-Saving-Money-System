@@ -61,7 +61,7 @@ class StepTwoRegister extends GetView<RegisterController> {
           );
         }),
         12.verticalSpace(),
-        CustomTextField(prefix: SvgPicture.asset(AppAsset.fullName,fit: BoxFit.scaleDown,),hintText: AppString.fullName.tr),
+        CustomTextField(prefix: SvgPicture.asset(AppAsset.uploadCv,fit: BoxFit.scaleDown,),hintText: AppString.uploadCv.tr),
 
       ],
     );

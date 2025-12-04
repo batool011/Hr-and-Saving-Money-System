@@ -71,7 +71,38 @@ class StepFourRegister extends GetView<RegisterController> {
         CustomTextField(prefix: SvgPicture.asset(AppAsset.about,fit: BoxFit.scaleDown,),hintText: AppString.about.tr,isComment: true),
         12.verticalSpace(),
         AdditionSection(text: AppString.addAnEducation.tr,onTap: (){},),
-        SubTitleSteps(text: AppString.skills)
+        24.verticalSpace(),
+        SubTitleSteps(text: AppString.skills.tr),
+        12.verticalSpace(),
+        CustomTextField(prefix: SvgPicture.asset(AppAsset.skill,fit: BoxFit.scaleDown,),hintText: AppString.skillName.tr),
+        12.verticalSpace(),
+        Obx(() {
+          return CustomDropdown(
+            value: controller.selectedGender.value,
+            items: controller.genderItems,
+            hint: AppString.level.tr,
+            onChanged: controller.setSelectedGender,
+            prefixIcon: SvgPicture.asset(AppAsset.level),
+          );
+        }),
+        12.verticalSpace(),
+        AdditionSection(text: AppString.addASkill.tr,onTap: (){},),
+        12.verticalSpace(),
+        CustomTextField(prefix: SvgPicture.asset(AppAsset.language,fit: BoxFit.scaleDown,),hintText: AppString.language.tr),
+        12.verticalSpace(),
+        Obx(() {
+          return CustomDropdown(
+            value: controller.selectedGender.value,
+            items: controller.genderItems,
+            hint: AppString.level.tr,
+            onChanged: controller.setSelectedGender,
+            prefixIcon: SvgPicture.asset(AppAsset.level),
+          );
+        }),
+        12.verticalSpace(),
+        AdditionSection(text: AppString.addALanguage.tr,onTap: (){},),
+        12.verticalSpace(),
+
       ],
 
     );

@@ -65,6 +65,23 @@ class AppString {
   static const String search = "Search";
   static const String lastResearchFilter = " Last research filter";
   static const String seeAll = " See All";
+  static const String uploadCv = "Upload Cv";
+  static const String inastagramLink ="Inastagram Link";
+  static const String tikTokLink ="TikTok Link";
+  static const String snapChatLink ="Snap Chat Link";
+  static const String dribbleLink ="Dribble Link";
+  static const String behanceLink ="Behance Link";
+  static const String skillName ="Skill Name";
+  static const String language ="Language";
+  static const String addALanguage ="Add A Language";
+  static const String addASkill ="Add A Skill";
+  static const String uploadYourPhoto ="Upload Your Photo";
+  static const String pleaseEnterYourPhoto ="  Please Enter Your Photo :";
+  static const String addAPhoto ="Add A Photo";
+  static const String bookmarks ="Bookmarks";
+
+
+
 
 
 

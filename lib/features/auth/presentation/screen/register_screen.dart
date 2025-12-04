@@ -6,6 +6,7 @@ import 'package:career/core/widget/under_line_text.dart';
 import 'package:career/features/auth/presentation/screen/steps/step_five_register.dart';
 import 'package:career/features/auth/presentation/screen/steps/step_four_register.dart';
 import 'package:career/features/auth/presentation/screen/steps/step_one_register.dart';
+import 'package:career/features/auth/presentation/screen/steps/step_six_register.dart';
 import 'package:career/features/auth/presentation/screen/steps/step_three_register.dart';
 import 'package:career/features/auth/presentation/screen/steps/step_two_register.dart';
 import 'package:flutter/material.dart';
@@ -97,7 +98,7 @@ class RegisterScreen extends GetView<RegisterController> {
      case 4:
        return StepFiveRegister();
      case 5:
-       return Container(color: Colors.pinkAccent,);
+       return StepSixRegister();
      default:
        return const Center(child: Text("Unknown Step"));
    }

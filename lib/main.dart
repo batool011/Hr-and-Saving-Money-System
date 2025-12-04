@@ -1,12 +1,15 @@
 import 'package:career/core/router/app_route.dart';
 import 'package:career/core/router/routes_name.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'core/theme/theme_manger.dart';
 import 'features/splash/presentation/getx/binding/splash_binding.dart';
 
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(const MyApp());
 }
 

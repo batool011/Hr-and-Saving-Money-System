@@ -11,6 +11,7 @@ class AppAsset{
  static const onboardingThird ='$baseUrlImage/onboardingThird.png';
  static const onboardingFourth ='$baseUrlImage/onboardingFourth.png';
  static const slider = '$baseUrlImage/slider.png';
+ static const profileImage = '$baseUrlImage/profile.png';
  static const neuw = '$baseUrlImage/new.png';
 
 
@@ -53,6 +54,27 @@ class AppAsset{
  static const searchWorkBold = '$baseUrlIcons/searchWorkBold.svg';
  static const locationHome = '$baseUrlIcons/locationHome.svg';
  static const search = '$baseUrlIcons/search.svg';
+ static const chat = '$baseUrlIcons/chat.svg';
+ static const filter = '$baseUrlIcons/filter.svg';
+ static const locationBold = '$baseUrlIcons/locationBold.svg';
+ static const sort = '$baseUrlIcons/sort.svg';
+ static const notification = '$baseUrlIcons/notification.svg';
+ static const uploadCv = '$baseUrlIcons/uploadCv.svg';
+ static const google = '$baseUrlIcons/google.svg';
+ static const behance = '$baseUrlIcons/behance.svg';
+ static const dribble = '$baseUrlIcons/dribble.svg';
+ static const insta = '$baseUrlIcons/insta.svg';
+ static const linkedIn = '$baseUrlIcons/linkedIn.svg';
+ static const tikTok = '$baseUrlIcons/tikTok.svg';
+ static const snapChat ='$baseUrlIcons/snapChat.svg';
+ static const skill ='$baseUrlIcons/skill.svg';
+ static const language ='$baseUrlIcons/language.svg';
+ static const home ='$baseUrlIcons/home.svg';
+ static const homeBold ='$baseUrlIcons/homeBold.svg';
+ static const setting ='$baseUrlIcons/setting.svg';
+
+
+
 
 
 

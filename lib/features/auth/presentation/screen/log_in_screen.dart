@@ -54,7 +54,7 @@ class LogInScreen extends GetView<LoginController> {
                     DottedLineText(),
                     30.verticalSpace(),
                     CustomAuthButton(text: AppString.createAFreeAccountNow.tr, icons: AppAsset.createNewAccount),
-                    CustomAuthButton(text: AppString.continueWithGoogle.tr, icons: AppAsset.createNewAccount),
+                    CustomAuthButton(text: AppString.continueWithGoogle.tr, icons: AppAsset.google),
                     30.verticalSpace(),
                     UnderLineText(text: AppString.doItLater.tr)
                   ]

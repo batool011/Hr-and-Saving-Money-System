@@ -12,6 +12,7 @@ class AppColor {
   static const darkGrey =Color(0xFFD9D9D9);
   static const grey =Color(0xFFEDEAE4);
   static const blackLight =Color(0xFF484848);
+  static const scaffoldColor =Color(0xFFF7F9F8);
   static const black =Colors.black;
   static const errorColor =Colors.red;
 

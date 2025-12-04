@@ -11,7 +11,7 @@ final bool withRadius;
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(0.016.h(context)),
-      margin:withRadius? EdgeInsetsDirectional.only(end : 0.04.w(context)):  EdgeInsetsDirectional.only(end : 0.02.w(context)),
+      margin:withRadius? EdgeInsetsDirectional.only(end : 0.02.w(context)):  EdgeInsetsDirectional.only(end : 0.04.w(context)),
       decoration: BoxDecoration(
         color: AppColor.secondryColor,
         borderRadius: withRadius? BorderRadius.circular(50): BorderRadius.circular(20),
