@@ -15,18 +15,18 @@ class AdvertisementScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: PreferredSize(preferredSize: Size(double.infinity,70),
+      child: CustomAppBar(text: AppString.bookmarks.tr,)),
       backgroundColor: AppColor.scaffoldColor,
       body: ListView(
-
         children: [
-          CustomAppBar(text: AppString.bookmarks.tr,),
           Padding(
             padding:  EdgeInsets.symmetric(horizontal: 0.05.w(context),vertical: 0.01.h(context)),
             child: Row(children: [
               Text("10 items"),
               Spacer(),
               SvgPicture.asset(AppAsset.sort),
-              2.horizontalSpace(),
+              4.horizontalSpace(),
               UnderLineText(text: AppString.seeAll.tr),
             ],),
           ),
