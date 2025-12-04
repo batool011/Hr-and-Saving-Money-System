@@ -1,10 +1,10 @@
 import 'package:career/core/constant/class/app_asset.dart';
 import 'package:career/core/constant/class/app_size.dart';
-import 'package:career/features/app%20main/home/presentation/getx/controller/home_controller.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../core/constant/class/app_color.dart';
+import '../../../../../../core/constant/class/app_color.dart';
+import '../getx/controller/home_controller.dart';
 
 class CustomSlider extends GetView<HomeController> {
   const CustomSlider({super.key});

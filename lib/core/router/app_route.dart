@@ -8,8 +8,8 @@ import 'package:career/features/on%20boarding/presentation/getx/binding/onboardi
 import 'package:career/features/on%20boarding/presentation/screen/on_boarding_screen.dart';
 import 'package:career/features/splash/presentation/screen/splash_screen.dart';
 import 'package:get/get.dart';
-import '../../features/app main/prsentation/getx/home_binding.dart';
-import '../../features/app main/prsentation/main_screen.dart';
+import '../../features/app main/presentation/getx/main_binding.dart';
+import '../../features/app main/presentation/screens/main_screen.dart';
 import '../../features/splash/presentation/getx/binding/splash_binding.dart';
 
 class AppRoute {
