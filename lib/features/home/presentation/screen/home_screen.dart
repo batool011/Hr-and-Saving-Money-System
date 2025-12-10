@@ -3,11 +3,12 @@ import 'package:career/core/constant/class/app_color.dart';
 import 'package:career/core/constant/class/app_size.dart';
 import 'package:career/core/constant/class/app_string.dart';
 import 'package:career/core/widget/under_line_text.dart';
-import 'package:career/features/auth/presentation/widget/custom_white_container.dart';
+import 'package:career/core/widget/custom_white_container.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../../../core/widget/custom_card.dart';
 import '../../../../../../core/widget/custom_text_field_search.dart';
+import '../../../../core/router/routes_name.dart';
 import '../getx/controller/home_controller.dart';
 import '../widget/custom_home_app_bar.dart';
 import '../widget/custom_slider.dart';
@@ -49,7 +50,9 @@ class HomeScreen extends GetView<HomeController> {
                 itemBuilder: (context,index){
                   return Padding(
                       padding:  EdgeInsets.symmetric(horizontal: 0.05.w(context),vertical: 0.005.h(context)),
-                      child: CustomCard(),
+                      child: GestureDetector(
+                          onTap: (){Get.toNamed(RoutesName.detailJob);},
+                          child: CustomCard()),
                   );
                 })
 

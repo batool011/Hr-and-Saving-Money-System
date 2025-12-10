@@ -3,12 +3,14 @@ import 'package:career/core/router/routes_name.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'core/localization/app_translation.dart';
 import 'core/theme/theme_manger.dart';
 import 'features/splash/presentation/getx/binding/splash_binding.dart';
 
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  //await AppTranslation.init();
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(const MyApp());
 }
@@ -21,6 +23,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      translations: AppTranslation(),
+      // locale: const Locale('en', 'US'),
+      // fallbackLocale: const Locale('en', 'US'),
       theme: getApplicationTheme(context),
       initialRoute: RoutesName.splash,
       initialBinding: SplashBinding(),

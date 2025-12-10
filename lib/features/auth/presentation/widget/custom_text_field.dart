@@ -28,14 +28,16 @@ class CustomTextField extends StatelessWidget {
     return Padding(
        padding: EdgeInsets.symmetric( horizontal: 0.05.w(context)),
       child: TextFormField(
+        maxLines: isComment?5:1,
+
         keyboardType: textInputType,
         style: const TextStyle(fontSize: 14, color: AppColor.black),
         controller: controller,
         obscureText: obscureText!,
         decoration: InputDecoration(
           prefixIcon: isComment?Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 0.04.w(context)),
-            child: Align(alignment: Alignment.topLeft,child: prefix,),
+            padding:  EdgeInsets.only(bottom: 0.07.h(context)),
+            child: prefix,
           ):prefix,
           suffixIcon: suffixIcon,
           hintText: hintText,
@@ -44,10 +46,10 @@ class CustomTextField extends StatelessWidget {
           ).textTheme.bodySmall!.copyWith(color: AppColor.darkGrey),
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(40),
+            borderRadius: BorderRadius.circular(20),
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(40),
+            borderRadius: BorderRadius.circular(20),
             borderSide: const BorderSide(
               color: AppColor.primaryColor,
               width: 1.0,
@@ -55,7 +57,7 @@ class CustomTextField extends StatelessWidget {
           ),
           contentPadding: isComment? EdgeInsets.symmetric(
             horizontal:  0.05.w(context),
-            vertical:  0.05.h(context),
+            vertical:  0.02.h(context),
           ):EdgeInsets.symmetric(
             horizontal:  0.05.w(context),
             vertical:  0.02.h(context),

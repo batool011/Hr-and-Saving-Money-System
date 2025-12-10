@@ -72,6 +72,8 @@ class AppAsset{
  static const home ='$baseUrlIcons/home.svg';
  static const homeBold ='$baseUrlIcons/homeBold.svg';
  static const setting ='$baseUrlIcons/setting.svg';
+ static const advCyan ='$baseUrlIcons/advCyan.svg';
+
 
 
 

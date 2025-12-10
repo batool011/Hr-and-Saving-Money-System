@@ -1,9 +1,10 @@
 import 'package:career/core/constant/class/app_asset.dart';
 import 'package:career/core/constant/class/app_color.dart';
+import 'package:career/features/find_job/presentation/screen/find_job_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
-import '../../../book mark/presentation/screen/advertisement_screen.dart';
+import '../../../book-mark/presentation/screen/advertisement_screen.dart';
 import '../../../home/presentation/screen/home_screen.dart';
 
 
@@ -18,7 +19,7 @@ class MainScreen extends StatelessWidget {
     return [
       HomeScreen(),
       AdvertisementScreen(),
-      Container(color: Colors.purpleAccent,),
+      FindJobScreen(),
       Container(color: Colors.orangeAccent,)
 
     ];

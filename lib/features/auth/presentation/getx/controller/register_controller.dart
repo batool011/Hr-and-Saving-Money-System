@@ -3,11 +3,25 @@ import 'package:career/core/constant/class/app_string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../data/model/country_model.dart';
 
 class RegisterController extends GetxController {
   var currentStep = 0.obs;
   final int totalSteps = 6;
+  final ImagePicker picker = ImagePicker();
+  RxString pickedImagePath = "".obs;
+
+  //
+  Future<void> pickImage() async {
+    final XFile? image = await picker.pickImage(source: ImageSource.gallery);
+
+    if (image != null) {
+      pickedImagePath.value = image.path;
+    } else {
+      Get.snackbar("No Image", "You didn't pick an image");
+    }
+  }
   //
   final genderItems = <String>[
     AppString.female.tr,

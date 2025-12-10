@@ -28,7 +28,6 @@ class LogInScreen extends GetView<LoginController> {
             children: [
               CustomTitleAuth(text1: AppString.findYourDreamJob.tr, text2: AppString.loginHere.tr,),
               CustomTextAuth(text: AppString.pleaseEnterYourAccountInformationToContinue.tr),
-
               CustomTextField(prefix: SvgPicture.asset(AppAsset.email,fit: BoxFit.scaleDown,),hintText: AppString.emailAddress.tr,controller: controller.email,),
               16.verticalSpace(),
               CustomTextField(prefix: SvgPicture.asset(AppAsset.password,fit: BoxFit.scaleDown,),hintText: AppString.password.tr,controller: controller.password,),

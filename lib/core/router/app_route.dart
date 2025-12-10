@@ -4,12 +4,14 @@ import 'package:career/features/auth/presentation/screen/create_new_account_scre
 import 'package:career/features/auth/presentation/screen/log_in_screen.dart';
 import 'package:career/features/auth/presentation/screen/register_screen.dart';
 import 'package:career/features/auth/presentation/screen/verification_screen.dart';
+import 'package:career/features/detail-job/presentation/screen/detail_job_screen.dart';
 import 'package:career/features/on%20boarding/presentation/getx/binding/onboarding_binding.dart';
 import 'package:career/features/on%20boarding/presentation/screen/on_boarding_screen.dart';
 import 'package:career/features/splash/presentation/screen/splash_screen.dart';
 import 'package:get/get.dart';
-import '../../features/app main/presentation/getx/main_binding.dart';
-import '../../features/app main/presentation/screens/main_screen.dart';
+import '../../features/app-main/presentation/getx/main_binding.dart';
+import '../../features/app-main/presentation/screens/main_screen.dart';
+import '../../features/detail-job/presentation/getx/binding/detail_job_binding.dart';
 import '../../features/splash/presentation/getx/binding/splash_binding.dart';
 
 class AppRoute {
@@ -48,6 +50,11 @@ class AppRoute {
       name: RoutesName.home,
       page: () =>  MainScreen(),
       binding: MainBinding(),
+    ),
+    GetPage(
+      name: RoutesName.detailJob,
+      page: () =>  DetailJobScreen(),
+      binding: DetailJobBinding(),
     ),
   ];
 }

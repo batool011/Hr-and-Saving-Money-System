@@ -79,6 +79,13 @@ class AppString {
   static const String pleaseEnterYourPhoto ="  Please Enter Your Photo :";
   static const String addAPhoto ="Add A Photo";
   static const String bookmarks ="Bookmarks";
+  static const String findJobs = "Find Jobs";
+  static const String sortBy = "Sort By";
+  static const String aboutPosition ="About Position";
+  static const String aboutCompany ="About Company";
+  static const String chatWith ="Chat With";
+  static const String applyNow ="Apply Now";
+  static const String saveAsABookmark ="Save  as a bookmark";
 
 
 

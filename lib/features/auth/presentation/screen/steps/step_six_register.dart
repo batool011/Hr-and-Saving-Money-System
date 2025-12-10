@@ -115,7 +115,9 @@ class StepSixRegister extends GetView<RegisterController> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.add,color: AppColor.lightCyan,size: 14,),
-            UnderLineText(text: AppString.addAPhoto.tr),
+            UnderLineText(text: AppString.addAPhoto.tr,onTap: (){
+              print("batoololdopsk,kfs");
+              controller.pickImage();},),
           ],
         )
       ],
