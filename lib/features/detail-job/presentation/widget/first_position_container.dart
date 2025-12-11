@@ -8,7 +8,7 @@ class FirstPositionContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 0.04.w(context),vertical: 0.02.h(context)),
+      padding: EdgeInsets.symmetric(horizontal: 0.04.w(context),vertical: 0.013.h(context)),
       margin: EdgeInsets.symmetric(horizontal: 0.04.w(context)),
       decoration: BoxDecoration(
           color: AppColor.secondryColor,
@@ -17,7 +17,7 @@ class FirstPositionContainer extends StatelessWidget {
       child:  Row(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 0.04.w(context),vertical: 0.01.h(context)),
+            padding: EdgeInsets.symmetric(horizontal: 0.045.w(context),vertical: 0.015.h(context)),
             decoration: BoxDecoration(
               color: AppColor.lightBlue.withAlpha(25),
               borderRadius: BorderRadius.circular(30),
@@ -26,7 +26,7 @@ class FirstPositionContainer extends StatelessWidget {
           ),
           14.horizontalSpace(),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 0.04.w(context),vertical: 0.01.h(context)),
+            padding: EdgeInsets.symmetric(horizontal: 0.045.w(context),vertical: 0.015.h(context)),
             decoration: BoxDecoration(
               color: AppColor.lightCyan.withAlpha(25),
               borderRadius: BorderRadius.circular(30),

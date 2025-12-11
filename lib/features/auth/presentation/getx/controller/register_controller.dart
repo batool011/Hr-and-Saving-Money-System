@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'package:career/core/constant/class/app_string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
@@ -10,19 +11,20 @@ class RegisterController extends GetxController {
   var currentStep = 0.obs;
   final int totalSteps = 6;
   final ImagePicker picker = ImagePicker();
-  RxString pickedImagePath = "".obs;
+  File? imageFile;
+  final ImagePicker _picker = ImagePicker();
 
-  //
-  Future<void> pickImage() async {
-    final XFile? image = await picker.pickImage(source: ImageSource.gallery);
 
-    if (image != null) {
-      pickedImagePath.value = image.path;
-    } else {
-      Get.snackbar("No Image", "You didn't pick an image");
+  Future<void> pickImageFromGallery() async {
+    final picked = await _picker.pickImage(
+      source: ImageSource.gallery,
+      imageQuality: 80,
+    );
+    if (picked != null) {
+      imageFile = File(picked.path);
+      update();
     }
   }
-  //
   final genderItems = <String>[
     AppString.female.tr,
     AppString.male.tr

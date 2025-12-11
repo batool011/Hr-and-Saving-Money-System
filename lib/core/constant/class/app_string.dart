@@ -86,10 +86,11 @@ class AppString {
   static const String chatWith ="Chat With";
   static const String applyNow ="Apply Now";
   static const String saveAsABookmark ="Save  as a bookmark";
-
-
-
-
+  static const String myProfile ="My Profile";
+  static const String exportCv="Export Cv";
+  static const String setting="Setting";
+  static const String accountSettings ="Account Settings";
+  static const String registerAsACompany="Register as a Company";
 
 
 

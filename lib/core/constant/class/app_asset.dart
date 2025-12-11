@@ -13,6 +13,8 @@ class AppAsset{
  static const slider = '$baseUrlImage/slider.png';
  static const profileImage = '$baseUrlImage/profile.png';
  static const neuw = '$baseUrlImage/new.png';
+ static const Image = '$baseUrlImage/Image.png';
+
 
 
  //icons
@@ -73,23 +75,8 @@ class AppAsset{
  static const homeBold ='$baseUrlIcons/homeBold.svg';
  static const setting ='$baseUrlIcons/setting.svg';
  static const advCyan ='$baseUrlIcons/advCyan.svg';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ static const edites ='$baseUrlIcons/edites.svg';
+ static const building ='$baseUrlIcons/building.svg';
 
 
 

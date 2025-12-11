@@ -10,21 +10,14 @@ class MapWidget extends GetView<DetailJoController> {
   @override
   Widget build(BuildContext context) {
     return Obx(() {
-      return Padding(
-        padding: const EdgeInsets.symmetric(vertical: 18),
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 0.05.w(context)),
-          height: 200,
-          child: GoogleMap(
-            initialCameraPosition: controller.initialCameraPosition,
-            zoomControlsEnabled: false,
-            scrollGesturesEnabled: false,
-            myLocationEnabled: false,
-            myLocationButtonEnabled: false,
-            onMapCreated: controller.onMapCreated,
-            markers: controller.markers,
-          )
-        ),
+      return GoogleMap(
+        initialCameraPosition: controller.initialCameraPosition,
+        zoomControlsEnabled: false,
+        scrollGesturesEnabled: false,
+        myLocationEnabled: false,
+        myLocationButtonEnabled: false,
+        onMapCreated: controller.onMapCreated,
+        markers: controller.markers,
       );
     });
   }
